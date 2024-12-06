@@ -1,0 +1,14 @@
+# Дано трехзначное число. Вывести число, полученное при прочтении исходного числа справа налево.
+try:
+    number = int(input("Введите трехзначное число: "))
+
+    hundreds = number // 100
+    tens = (number % 100) // 10
+    units = number % 10
+
+    reversed_number = units * 100 + tens * 10 + hundreds
+
+    print("Число, прочитанное справа налево:", reversed_number)
+
+except:
+    print("Ошибка")
