@@ -1,1 +1,17 @@
+def around_function(n):
+    if n <= 0:
+        raise ValueError("N должно быть положительным целым числом.")
 
+    summa = 1.0
+    factorial = 1.0
+    for i in range(1, n + 1):
+        factorial *= i
+        summa += 1.0 / factorial
+    return summa
+
+try:
+    n = int(input("Введите положительное целое число N: "))
+    around_number = around_function(n)
+    print(f"Приближенное значение e для N = {n}: {around_number}")
+except ValueError as e:
+    print(f"Ошибка: {e}")
