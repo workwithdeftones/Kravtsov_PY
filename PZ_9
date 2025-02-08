@@ -1,0 +1,11 @@
+people = {
+    "Андрей": 32,
+    "Виктор": 29,
+    "Максим": 18,
+    "Ольга": 25,
+    "Елена": 30,
+    "Игорь": 22
+}
+
+average_age = sum(people.values()) / len(people)
+print(f"Средний возраст: {average_age:.2f}")
